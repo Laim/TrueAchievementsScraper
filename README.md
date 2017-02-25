@@ -9,9 +9,9 @@ To include the script in your project, put the following at the top of any page 
   $gamertag = "NiiNJA+WEASEL";
   require("autoload.php");
 ?>
+```
 
 __Note:__ If a gamertag has a space in it, replace the space with + instead.
-```
 
 ## Simple Usage
 ```php
@@ -35,8 +35,6 @@ require("autoload.php");
 </html>
 ```
 
-The above will output:
-
 ## Available Functions
 
 ```php
@@ -54,7 +52,9 @@ You can call it like:
 print($TAS->TASRecentAchievements[0][0]);
 ```
 
-This would output the first achievement's image. 
+This would output the first achievement's image.
+
+To view all information available in the function, just call it with print_r or var_dump.
 ## Dependencies
 * [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net)
 
