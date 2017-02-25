@@ -1,7 +1,7 @@
 <?php
 require("include/simple_html_dom.php");
 
-$html = file_get_html("https://www.trueachievements.com/gamer/NiiNJA+WEASEL");
+$html = file_get_html("https://www.trueachievements.com/gamer/" . $gamertag);
 require("include/functions.php");
 
 $TAS = new TAS();
