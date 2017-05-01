@@ -13,10 +13,10 @@ To include the script in your project, put the following at the top of any page 
 
 __Note:__ If a gamertag has a space in it, replace the space with + instead.
 
-## Simple Usage
+## Sample Usage
 ```php
 <?php
-$username = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
+$gamertag = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
 
 require("autoload.php");
 ?>
