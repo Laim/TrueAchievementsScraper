@@ -40,7 +40,7 @@ require("autoload.php");
 ```php
 TASGamerTag()
 TASGamerscore()
-TASAvatat()
+TASAvatar()
 TASRecentAchievements()
 ```
 
