@@ -6,17 +6,15 @@ TAS is a simple script that allows you to scrape the Xbox Achievements website T
 To include the script in your project, put the following at the top of any page you are wanting to use the script on.
 ```php
 <?php
-  $gamertag = "NiiNJA+WEASEL";
+  $gamertag = "NiiNJA WEASEL";
   require("autoload.php");
 ?>
 ```
 
-__Note:__ If a gamertag has a space in it, replace the space with + instead.
-
 ## Sample Usage
 ```php
 <?php
-$gamertag = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
+$gamertag = "NiiNJA WEASEL"; //REPLACE ANY SPACES WITH +
 
 require("autoload.php");
 ?>
@@ -60,6 +58,6 @@ To view all information available in the function, just call it with print_r or 
 
 ## Contact
 #### Contributors
-* Homepage: http://laimmckenzie.com/trueachievements/
-* Email: laim@megalelz.com
-* Twitter: [@MEGALELZ](https://twitter.com/MEGALELZ "MEGALELZ on twitter")
+* Homepage: http://laimmckenzie.com/
+* Email: laim.mckenzie@megalelz.com
+* Twitter: [@Lyeuhm](https://twitter.com/Lyeuhm "Laim on twitter")
