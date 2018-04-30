@@ -1,5 +1,5 @@
 <?php
-$gamertag = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
+$gamertag = "NiiNJA WEASEL"; //REPLACE ANY SPACES WITH +
 
 require("autoload.php");
 ?>
@@ -11,6 +11,7 @@ require("autoload.php");
   <body>
 
     <h1>Username, Gamerscore and Avatar Example</h1>
+
     <p>Hello <?php echo($TAS->TASGamertag());?>. It looks like you have <?php echo($TAS->TASGamerscore());?> gamerscore.</p>
 
     <img src="<?php echo($TAS->TASAvatar());?>"/>
