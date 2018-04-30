@@ -1,5 +1,5 @@
 <?php
-$username = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
+$gamertag = "NiiNJA+WEASEL"; //REPLACE ANY SPACES WITH +
 
 require("autoload.php");
 ?>
