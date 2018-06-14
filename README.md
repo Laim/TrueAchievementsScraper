@@ -1,3 +1,10 @@
+---
+###### Project Notice
+
+This entire project will likely be rewritten in the near future, the code is a mess (it works) at the moment and it's not nice to look at or use.
+
+---
+
 TrueAchievementsScraper (TAS)
 ======
 TAS is a simple script that allows you to scrape the Xbox Achievements website TrueAchievements. This script is not affiliated with TA or Rich Stone in any form.
