@@ -7,9 +7,6 @@ class TAS
   private $TAS_Avatar;
 
   private $TAS_AchievementsPanel;
-    #REQUIRED FUNCTIONS
-    #THESE CAN BE MODIFIED, BUT MODIFY AT YOUR OWN RISK DOOD
-    #SERIOUSLY
 
     public function userinformation($html) {
       $items = $html->find('div[id=oGamer]');
@@ -22,16 +19,16 @@ class TAS
 
     }
 
-    public function recent_achievements($html) {
+  public function recent_achievements($html) {
       $items = $html->find('div[class=achievementpanel]');
 
       //$TAGAchievementImg = array();
       foreach ($items as $item) {
         $this->TAS_AchievementsPanel[] = array(
-          $item->children(0)->children(0)->children(0)->src,                                         //Achievement Image
-          $item->children(1)->children(0)->children(0)->innertext,                                   //Achievement Name
-          $item->children(1)->children(1)->children(0)->innertext,                                   //Achievement Description
-          $this->bracket_remove("(", ")", $item->children(1)->children(0)->children(1)->innertext)   //Achievement Gamerscore
+          "Image" => $item->children(0)->children(0)->children(0)->src,                                         //Achievement Image
+          "Name" => $item->children(1)->children(0)->children(1)->innertext,                                   //Achievement Name
+          "Info" => $item->children(1)->children(1)->children(0)->innertext,                                   //Achievement Description
+          "Score" => $this->bracket_remove("(", ")", $item->children(1)->children(0)->children(2)->innertext)   //Achievement Gamerscore
         );
       }
     }
@@ -42,9 +39,6 @@ class TAS
         return str_replace($replace, $new, $string);
     }
 
-
-    ##ACTUAL DATA THAT GETS RETURNED ON CALL#
-    #I MEAN YOU CAN CHANGE THESE IF YOU REALLY WANT, BUT WHY?
 
     public function TASGamertag() {
           return $this->TAS_Gamertag;
