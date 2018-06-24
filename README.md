@@ -9,6 +9,7 @@ TrueAchievementsScraper (TAS)
 ======
 TAS is a simple script that allows you to scrape the Xbox Achievements website TrueAchievements. This script is not affiliated with TA or Rich Stone in any form.
 
+Example: [demo-code/tas] (http://demo-code.laimmckenzie.com/tas/example.php)
 ## Available Functions
 
 ```php
