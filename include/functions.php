@@ -9,7 +9,9 @@ class TAS
   private $TAS_AchievementsPanel;
 
     public function userinformation($html) {
-      $items = $html->find('div[id=oGamer]');
+      $items = $html->find('div[id=oGamerHeader]');
+
+      //print_r($items);
 
       foreach ($items as $item) {
         $this->TAS_Gamertag       = $item->children(1)->children(0)->children(0)->innertext; // Gamertag
@@ -20,15 +22,15 @@ class TAS
     }
 
   public function recent_achievements($html) {
-      $items = $html->find('div[class=achievementpanel]');
+      $items = $html->find('div[class=maincolumnpanel achievementpanel]');
 
       //$TAGAchievementImg = array();
       foreach ($items as $item) {
         $this->TAS_AchievementsPanel[] = array(
           "Image" => $item->children(0)->children(0)->children(0)->src,                                         //Achievement Image
-          "Name" => $item->children(1)->children(0)->children(1)->innertext,                                   //Achievement Name
+          "Name" => $item->children(1)->children(0)->children(0)->innertext,                                   //Achievement Name
           "Info" => $item->children(1)->children(1)->children(0)->innertext,                                   //Achievement Description
-          "Score" => $this->bracket_remove("(", ")", $item->children(1)->children(0)->children(2)->innertext)   //Achievement Gamerscore
+          "Score" => $this->bracket_remove("(", ")", $item->children(1)->children(0)->children(1)->innertext)   //Achievement Gamerscore
         );
       }
     }

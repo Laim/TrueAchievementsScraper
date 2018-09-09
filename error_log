@@ -1,0 +1,6 @@
+[09-Sep-2018 16:26:41 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes) in /var/www/vhosts/laimmckenzie.co.uk/domains/demo-code.laimmckenzie.com/tas/include/functions.php on line 14
+[09-Sep-2018 16:26:41 UTC] PHP Stack trace:
+[09-Sep-2018 16:26:41 UTC] PHP   1. {main}() /var/www/vhosts/laimmckenzie.co.uk/domains/demo-code.laimmckenzie.com/tas/example.php:0
+[09-Sep-2018 16:26:41 UTC] PHP   2. require_once() /var/www/vhosts/laimmckenzie.co.uk/domains/demo-code.laimmckenzie.com/tas/example.php:3
+[09-Sep-2018 16:26:41 UTC] PHP   3. TAS->userinformation() /var/www/vhosts/laimmckenzie.co.uk/domains/demo-code.laimmckenzie.com/tas/include/tasloader.php:9
+[09-Sep-2018 16:26:41 UTC] PHP   4. print_r() /var/www/vhosts/laimmckenzie.co.uk/domains/demo-code.laimmckenzie.com/tas/include/functions.php:14
